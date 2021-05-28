@@ -15,12 +15,14 @@ public class Ex20 {
 		
 		int num ;
 		
-		int answer = (int)(Math.random()*100)+1;
+		int answer = (int)(Math.random()*100)+1;           //랜덤값 생성. (강제형변환 시킴.)
 		
 		
 		
 		while (true) {
+			
 			System.out.print(">>");
+			
 			num = sc.nextInt();
 			
 			
@@ -28,7 +30,7 @@ public class Ex20 {
 				
 				System.out.println("맞았습니다.");
 				System.out.print("게임을 종료하시겠습니까? (y/n) >>");				
-				String exit = sc.next();
+				String exit = sc.nextLine();  
 				
 				if (exit.equals("y")) {
 					
@@ -38,7 +40,7 @@ public class Ex20 {
 						break;
 						
 				} else {
-					
+					System.out.println("재시작");
 					continue;
 				}				
 				
