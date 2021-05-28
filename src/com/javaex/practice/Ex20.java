@@ -38,7 +38,7 @@ public class Ex20 {
 						break;
 						
 				} else {
-					System.out.println("재시작");
+					
 					continue;
 				}				
 				
