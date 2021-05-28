@@ -30,7 +30,7 @@ public class Ex20 {
 				
 				System.out.println("맞았습니다.");
 				System.out.print("게임을 종료하시겠습니까? (y/n) >>");				
-				String exit = sc.nextLine();  
+				String exit = sc.next();  //nextLine쓰면 에러남.
 				
 				if (exit.equals("y")) {
 					
@@ -39,7 +39,7 @@ public class Ex20 {
 					System.out.println("=======================================");
 						break;
 						
-				} else {
+				} else if (exit.equals("n")){    //n외에 다른거 쓰면 바로 더 높게부터 나오네;
 					System.out.println("재시작");
 					continue;
 				}				
