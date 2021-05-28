@@ -11,18 +11,18 @@ public class Ex16 {
 		
 		int num = sc.nextInt();		
 		int sum = 0;
-		
+		int count = 0;
 		
 		for (int i = 1; i <= num; i++) {
 			
 			if(i % 5 == 0) {
-			sum=sum+i;
-			
+				sum=sum+i;
+				count++ ;
 			}
 			
 		}
 		
-		System.out.println("5의 배수의 개수 : "  );
+		System.out.println("5의 배수의 개수 : " + count );
 		System.out.println("5의 배수의 합   : " + sum);
 		
 		
