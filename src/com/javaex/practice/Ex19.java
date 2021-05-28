@@ -26,17 +26,19 @@ public class Ex19 {
 			} else if (num==1) {
 				System.out.print("예금액>");
 				
-				save = sc.nextInt();
-				
+				save = sc.nextInt();				
 				a=a+save;
+				
 			} else if (num == 2) {
 				System.out.print("출금액>");
-				w = sc.nextInt();
-				
+				w = sc.nextInt();				
 				a=save-w;
+				
 			} else if ( num == 3) {
 				System.out.print("잔고액>" + a);
+				
 			} else {
+				
 				System.out.print("다시 입력해주세요.");
 			}
 			
